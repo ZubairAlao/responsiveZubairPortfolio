@@ -1,0 +1,67 @@
+@use '../util' as u;
+
+html { 
+  box-sizing: border-box; 
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: u.$body-font;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-weight: 300;
+  background-color: var(--main-bg-navy);
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Visibility
+.hide-for-mobile {
+  @include u.breakpoint-down(medium){
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include u.breakpoint(large){
+    display: none;
+  }
+} 
+
+/* javascript styling */
+
+.sections {
+  display: none;
+}
+
+.sections.active {
+  display: block;
+}
+
+
+#main {
+  padding: u.rem(40) 0;
+  color: var(--color-white);
+}

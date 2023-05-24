@@ -1,0 +1,23 @@
+@use '../util' as u;
+
+.button {
+  display: inline-block;
+  font-size: u.rem(16);
+  font-family: u.$body-font;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: u.rem(10) u.rem(14);
+  border-radius: u.rem(24);
+  background-color: transparent;
+  color: var(--color-white);
+  border: .5px solid var(--color-light-navy);
+  transition-property: background-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+
+  &:hover {
+    background-color: var(--color-light-green);
+  }
+}

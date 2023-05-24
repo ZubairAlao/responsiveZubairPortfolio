@@ -1,0 +1,10 @@
+@use '../util' as u;
+
+:root {
+  --color-black: hsla(0, 0%, 0%, 1);
+  --color-white: hsla(0, 0%, 100%, 1);
+  --main-bg-navy: hsla(214, 32%, 17%, 1);
+  --color-light-navy: hsla(202, 15%, 48%, 1);
+  --color-light-green: hsla(120, 100%, 50%, 1);
+}
+

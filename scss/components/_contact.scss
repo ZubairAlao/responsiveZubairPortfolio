@@ -1,0 +1,107 @@
+@use '../util/' as u;
+
+.contact {
+
+    &__content {
+
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    
+    h2 span {
+        color: var(--color-light-green);
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: u.rem(40);
+        justify-items: center;
+
+        @include u.breakpoint(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__text {
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    &__addresses {
+        display: flex;
+        font-size: u.rem(16);
+        flex-direction: column;
+        gap: u.rem(20);
+        margin-bottom: u.rem(20);
+
+        i {
+            margin-right: u.rem(20);
+        }
+    }
+
+    &__socials {
+        a {
+            margin-right: u.rem(10);
+            color: var(--color-white);
+
+            &:hover {
+                color: var(--color-light-green);
+            }
+        }
+    }
+
+    &__form {
+        width: 100%;
+    }
+
+    &__control {
+        margin-bottom: u.rem(16);
+
+        .visually-hidden {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+    }
+
+    &__control input,
+    &__control textarea {
+        width: 100%;
+        padding: u.rem(16) u.rem(24);
+        border: none;
+        border-bottom: 1px solid var(--color-light-green);
+        background: transparent;
+        font-size: u.rem(16);
+        line-height: 1.6;
+        color: var(--color-white);
+
+        &:focus-visible, &:focus-visible {
+            outline: 2px solid var(--color-light-green);
+            outline-offset: 2px;
+        }
+    }
+
+    &__control > * ::placeholder {
+        color: var(--color-white);
+        opacity: 0.5;
+        text-transform: uppercase;
+    }
+
+    &__control textarea {
+        margin-bottom: u.rem(32);
+    }
+    
+    &__control button {
+       margin: 0 auto;
+       display: block;
+    }
+}

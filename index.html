@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alao Zubair Portfolio</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="./dist/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- main css -->
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="overlay has-fade"></div>
+
+        <nav>
+            <div class="container">
+                <a href="#" data-target="home"  class="header__logo nav-link active">
+                    Zubair<span>.</span>
+                </a>
+    
+                <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+    
+                <div class="header__links hide-for-mobile">
+                    <a href="#" class="nav-link" data-target="about">About</a>
+                    <a href="#" class="nav-link" data-target="portfolio">Portfolio</a>
+                    <a href="#" class="nav-link" data-target="resume">Resume</a>
+                    <a href="#" class="nav-link" data-target="contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="header__menu has-fade">
+            <a href="#" class="nav-link" data-target="about">About</a>
+            <a href="#" class="nav-link" data-target="portfolio">Portfolio</a>
+            <a href="#" class="nav-link" data-target="resume">Resume</a>
+            <a href="#" class="nav-link" data-target="contact">Contact</a>
+        </div>
+        
+    </header>
+
+    <main id="main">
+        <section class="sections active hero" id="home">
+            <div class="container">
+                <div class="hero__image"></div>
+                <div class="hero__text">
+                    <h1>
+                    Hi, my name is <span class="text-deco">Alao Zubair Lanre</span>
+                    </h1>
+                    <p>
+                        I'm a Front-End Web Developer with experience in HTML, CSS and JavaScript
+                        I specilize in building and designing interactive and dynamic web pages
+                        that provide engaging user experience.
+                    </p>
+                  <a href="#" data-target="portfolio" class="button nav-link">View Projects</a>
+                </div>
+            </div>
+        </section>
+    
+        <section class="sections about" id="about">
+            <div class="container">
+                <div class="about__image"></div>
+                
+                <div class="about__text">
+                    <h2>
+                        About <span>Me</span>
+                    </h2>
+                    <p>I'm a passionate web developer, I possess an insatiable curiosity about the 
+                        various aspects of web development, both front-end and back-end. 
+                        I love technology and it fuels my drive to push myself beyond my limits. 
+                        With a firm belief in my abilities, I approach every project with a determination to succeed.
+                    </p>
+                    <p>Through my experience in HTML, CSS, JavaScript, and Python, 
+                        I have honed my skills and gained a deeper understanding of the 
+                        intricacies of web development. In my first project, I employed 
+                        Flask technology to create an innovative solution that showcased my proficiency 
+                        in web development.
+                    </p>
+                  <a href="#" data-target="portfolio" class="button nav-link">View Projects</a>
+                </div>
+            </div>
+        </section>
+    
+        <section class="sections portfolio" id="portfolio">
+            <div class="container portfolio__content">
+                <div class="portfolio__intro">
+                    <h2>My <span>portfolio</span></h2>
+                    <p>
+                        Here are some of my work that I have done in various programming languages.
+                    </p>
+                </div>
+
+                <div class="portfolio__grid">
+
+                    <div class="portfolio__item">
+                        <div class="portfolio__image" style="background-image: url('/img/javascript-quiz.jpg')"></div>
+                        <div class="portfolio__text">
+                            <h3 class="portfolio__name">Intermediate JavaScript Quiz</h3>
+                            <p class="portfolio__tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </p>
+                            <div class="portfolio__links">
+                                <a href="https://africajsquiz.netlify.app/" target="_blank">View Project</a>
+                                <a href="https://github.com/ZubairLanre/javascriptQuiz" target="_blank">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <div class="portfolio__image" style="background-image: url('/img/fact-generator.jpg')"></div>
+                        <div class="portfolio__text">
+                            <h3 class="portfolio__name">Nigeria Random Fact Generator</h3>
+                            <p class="portfolio__tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </p>
+                            <div class="portfolio__links">
+                                <a href="https://randomnigeriafactsgenerator.netlify.app" target="_blank">View Project</a>
+                                <a href="https://github.com/ZubairLanre/randomNigeriaFactsGenerator" target="_blank">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <div class="portfolio__image" id="campus-online" style="background-image: url('/img/campus-helpdesk.jpg')"></div>
+                        <div class="portfolio__text">
+                            <h3 class="portfolio__name">Campus Help Desk</h3>
+                            <p class="portfolio__tags">
+                                <span>HTML</span>
+                                <span>Bootstrap</span>
+                                <span>Flask</span>
+                            </p>
+                            <div class="portfolio__links">
+                                <a href="https://github.com/ZubairLanre/project" target="_blank">View Project</a>
+                                <a href="https://youtu.be/JfdqHv_XJek" target="_blank">Demonstration</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="sections resume" id="resume">
+            <div class="container  resume__content">
+                <h2>My <span>skills</span></h2>
+                <div class="resume__grid">
+
+                    <div class="resume__item">
+                        <div class="resume__skill">
+                            HTML
+                        </div>
+                        <div class="resume__rating">
+                            <div class="resume__score">90%</div>
+                            <div class="html resume__score-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="resume__item">
+                        <div class="resume__skill">
+                            CSS
+                        </div>
+                        <div class="resume__rating">
+                            <div class="resume__score">70%</div>
+                            <div class="css resume__score-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="resume__item">
+                        <div class="resume__skill">
+                            JAVASCRIPT
+                        </div>
+                        <div class="resume__rating">
+                            <div class="resume__score">60%</div>
+                            <div class="js resume__score-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="resume__item">
+                        <div class="resume__skill">
+                            PYTHON
+                        </div>
+                        <div class="resume__rating">
+                            <div class="resume__score">50%</div>
+                            <div class="python resume__score-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timestamp">
+                <div class="timestamp__content container">
+                    <h2>My <span>Time Stamp</span></h2>
+    
+                    <div class="timestamp__grid">
+    
+                        <div class="timestamp__item">
+                            <div class="timestamp__icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="timestamp__info">
+                                <p class="timestamp__date">April 2023</p>
+                                <h3 class="timestamp__title">CS50X: Intoduction to Computer Science <span>- CS50</span></h3>
+                                <p class="timestamp__text">I completed the CS50X course, gaining proficiency in programming languages such as C, 
+                                    Python, HTML, CSS, and JavaScript. The capstone project involved developing a campus helpdesk that allowed users 
+                                    to file complaints and receive prompt responses. Overall, the course was challenging yet rewarding, and provided 
+                                    valuable experience that will be beneficial in my future endeavors.</p>
+                            </div>
+                        </div>
+
+                        <div class="timestamp__item">
+                            <div class="timestamp__icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="timestamp__info">
+                                <p class="timestamp__date">December 2022</p>
+                                <h3 class="timestamp__title">Responsive Web Design <span>- Freecodecamp</span></h3>
+                                <p class="timestamp__text">I completed a demanding 400-hour course on responsive design through FreeCodeCamp, 
+                                    gaining proficiency in HTML, CSS, and responsive design principles. I developed my first portfolio website as part of the 
+                                    coursework, which provided valuable experience in web development. Overall, the course was fulfilling and has enabled me to 
+                                    develop a strong foundation in web development.</p>
+                            </div>
+                        </div>
+
+                        <div class="timestamp__item">
+                            <div class="timestamp__icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="timestamp__info">
+                                <p class="timestamp__date">March 2022</p>
+                                <h3 class="timestamp__title">Affliate and Digital Marketer <span>- Jumia</span></h3>
+                                <p class="timestamp__text">As a Jumia affiliate marketer and online seller, I gained knowledge of various 
+                                    technological gadgets and developed my skills in sales, marketing, and e-commerce. This experience provided 
+                                    valuable insight into the technology industry and inspired me to pursue further learning in this field.</p>
+                            </div>
+                        </div>
+
+                        <div class="timestamp__item">
+                            <div class="timestamp__icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="timestamp__info">
+                                <p class="timestamp__date">2018 - 2022</p>
+                                <h3 class="timestamp__title">Graphic Design <span>- Akot Prints</h3>
+                                <p class="timestamp__text">As an intern at Akot Prints, I gained experience in printing artworks and branding. During my time there, 
+                                    I developed proficiency in several design software applications, including Illustrator, Photoshop, CorelDraw, and After Effects. 
+                                    This experience enhanced my skills in graphic design and provided valuable insight into the printing and branding industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="sections contact" id="contact">
+            <div class="contact__content container">
+                <h2>Contact <span>Me</span></h2>
+
+                <div class="contact__grid">
+                    <div class="contact__item contact__text">
+                        <h3>Contact Me Here</h3>
+                        <p>Feel free to get in touch with me using the contact form. 
+                            I would love to hear from you and discuss any web development projects or opportunities you may have. 
+                            I am dedicated to delivering high-quality solutions that meet your unique needs and exceed your expectations. 
+                            Let's collaborate and create something amazing together!
+                        </p>
+
+                        <div class="contact__addresses">
+                            <div class="contact__address"><i class="fas fa fa-search-location"></i>Nigeria</div>
+                            <div class="contact__address"><i class="fas fa-envelope"></i>alaozubair@gmail.com</div>
+                            <div class="contact__address"><i class="fas fa-phone"></i>+2348130030894</div>
+                        </div>
+
+                        <div class="contact__socials">
+                            <a href="https://github.com/ZubairLanre" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                            <a href="https://web.facebook.com/profile.php?id=100088194104784" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="https://twitter.com/Zubair_Lanre" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+
+                    </div>
+                    <form action="" class="contact__item contact__form">
+                        <div class="contact__control">
+                            <label for="name" class="visually-hidden">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                        </div>
+
+                        <div class="contact__control">
+                            <label email="name" class="visually-hidden">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="contact__control">
+                            <label for="message" class="visually-hidden">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="3" required></textarea>
+                        </div>
+
+                        <div class="contact__control">
+                            <button type="submit" class="button" >Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>

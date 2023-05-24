@@ -1,0 +1,61 @@
+@use '../util/' as u;
+
+.resume {
+
+    h2 {
+        text-align: center;
+
+        span {
+                color: var(--color-light-green);
+        }
+    }
+    
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: u.rem(20);
+        justify-items: center;
+        justify-items: center;
+
+        @include u.breakpoint(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__item {
+        display: grid;
+        width: 100%;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    &__rating {
+        display: grid;
+        grid-template-columns: 30px minmax(0, 1fr);
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__score {
+
+    }
+
+    &__score-bar {
+        height: 5px;
+        background-color: var(--color-light-navy);
+        width: 100%;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 5px;
+            background-color: var(--color-light-green);
+        }
+
+        &.html::after{width:95%;}
+        &.css::after{width:70%;}
+        &.js::after{width:60%;}
+        &.python::after{width:50%;}
+    }
+
+}
+

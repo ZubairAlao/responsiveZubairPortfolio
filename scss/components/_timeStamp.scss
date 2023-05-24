@@ -1,0 +1,61 @@
+@use '../util/' as u;
+
+.timestamp {
+    margin-top: u.rem(40);
+
+    &__content {
+
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        @include u.breakpoint(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+    }
+
+    &__item {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 40px minmax(0, 1fr);;
+    }
+
+    &__icon {
+        color: var(--color-white);
+        background-color: var(--color-light-green);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    &__info {
+        
+    }
+
+    &__date {
+        background-color: var(--color-light-navy);
+        padding: u.rem(5) u.rem(10);
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: clamp(u.rem(8), u.rem(10) + 0.48vw, u.rem(12));
+    }
+
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: clamp(u.rem(16), u.rem(16) + 0.48vw, u.rem(20));
+    }
+
+    &__text{
+        font-size: clamp(u.rem(12), u.rem(12) + 0.48vw, u.rem(16));
+        margin-bottom: 0;
+    }
+}
