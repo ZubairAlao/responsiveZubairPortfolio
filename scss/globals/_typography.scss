@@ -36,11 +36,11 @@ h3 {
 p {
   margin-top: 0;
   font-size: 1rem;
-  font-size: u.rem(16);
+  font-size: u.rem(18);
   line-height: 1.5;
 
   @include u.breakpoint(large){
-    font-size: u.rem(18);
+    font-size: u.rem(20);
   }
 }
 
