@@ -147,7 +147,7 @@
                                 <span>Flask</span>
                             </p>
                             <div class="portfolio__links">
-                                <a href="https://github.com/ZubairLanre/project" target="_blank">View Project</a>
+                                <a href="https://github.com/ZubairLanre/project" target="_blank">View Code</a>
                                 <a href="https://youtu.be/JfdqHv_XJek" target="_blank">Demonstration</a>
                             </div>
                         </div>
@@ -285,7 +285,17 @@
                         </div>
 
                     </div>
-                    <form action="" class="contact__item contact__form">
+                    <form action="/" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact__item contact__form">
+                        <p class="hidden">
+                            <label>
+                              Don’t fill this out if you’re human: <input name="bot-field" />
+                            </label>
+                          </p>
+
+                          <input type="hidden" name="subject" 
+                            value="New lead from %{formName} (%{submissionId})" />
+                            <p>
+
                         <div class="contact__control">
                             <label for="name" class="visually-hidden">Name</label>
                             <input type="text" name="name" id="name" placeholder="Name" required>

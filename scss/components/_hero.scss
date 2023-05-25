@@ -18,7 +18,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        height: u.rem(450);
+        height: u.rem(420);
         width: 70%;
         margin: 0 auto;
         max-width: u.rem(670);
@@ -37,6 +37,7 @@
         @include u.breakpoint(medium){
           flex: 2;
           order: 2;
+          height: u.rem(450);
         }
 
         @include u.breakpoint(large){
@@ -49,7 +50,7 @@
         text-align: center;
         line-height: 1.4;
 
-        h2 {
+        h1 {
           line-height: 1.2;
         }
         span {
